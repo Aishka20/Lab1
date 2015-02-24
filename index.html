@@ -1,53 +1,130 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Lab1 by Aishka20</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+ <head>
+  <title>canvas</title>
+  <meta charset="utf-8">
 
-  </head>
-  <body>
 
-      <header>
-        <h1>Lab1</h1>
-        <p>Мой проект</p>
-      </header>
+<body>
+<em> <h2> Аюпова А.А  </H2>
 
-      <div id="banner">
-        <span id="logo"></span>
+<h2> Вариант-2 </h2>
+ </em>
+</body>
 
-        <a href="https://github.com/Aishka20/Lab1" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/Aishka20/Lab1/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/Aishka20/Lab1/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
+  <canvas id="gusen" width="800" height="800">
+    <p>Ваш браузер не поддерживает рисование.</p>
+  </canvas>
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h3>
-<a id="welcome" class="anchor" href="#welcome" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome</h3>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/Aishka20">Aishka20</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+<script type="text/javascript">
+    var myCanvas = document.getElementById('gusen');
+     var cxt = myCanvas.getContext('2d');
+ // Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(600,200,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(600,300,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(600,400,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(600,500,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(500,500,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(400,500,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем окружность 
+     cxt.strokeStyle = "#000";
+     cxt.fillStyle = "#008000";
+     cxt.beginPath();
+     cxt.arc(300,500,50,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем левый глаз 
+     cxt.fillStyle = "#000000";
+     cxt.beginPath();
+     cxt.arc(580,185,8,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем правый глаз 
+     cxt.fillStyle="#000000";
+     cxt.beginPath();
+     cxt.arc(620,185,8,0,Math.PI*2,true);
+     cxt.closePath();
+     cxt.stroke();
+     cxt.fill();
+// Рисуем нос
+     cxt.strokeStyle = '#000000';
+     cxt.lineWidth = 3;
+     cxt.beginPath();
+     cxt.moveTo(597, 205);
+     cxt.quadraticCurveTo(600, 205, 607, 205);
+     cxt.stroke();
+// Рисуем рот
+     cxt.strokeStyle = '#FA8072';
+     cxt.lineWidth = 3;
+     cxt.beginPath();
+     cxt.moveTo(580, 220);
+     cxt.quadraticCurveTo(605, 240, 620, 220);
+     cxt.stroke();
+// Рисуем лев.усик
+     cxt.strokeStyle = '#000000';
+     cxt.lineWidth = 3;
+     cxt.beginPath();
+     cxt.moveTo(600,150);
+     
+     cxt.lineTo(640,100);
+     cxt.stroke();
+cxt.strokeStyle = '#000000';
+     cxt.lineWidth = 3;
+     cxt.beginPath();
+     cxt.moveTo(600,150);
+     
+    cxt.lineTo(560,100);
+     cxt.stroke();
+// красим
+      cxt.fillStyle = '#000000';
+      cxt.fill();
+      cxt.lineWidth = 1;
+      cxt.strokeStyle = 'black';
+      cxt.stroke();
+  </script>
+ </head>
+ <body>
 </html>
